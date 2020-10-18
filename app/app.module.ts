@@ -17,6 +17,7 @@ import { FooterComponent } from "./footer/footer.component";
 
 import "hammerjs";
 import { DishService } from "./services/dish.service";
+import { AppRoutingModule } from "../app-routing/app-routing.module";
 
 @NgModule({
   imports: [
@@ -28,7 +29,8 @@ import { DishService } from "./services/dish.service";
     MatListModule,
     MatGridListModule,
     MatCardModule,
-    MatButtonModule
+    MatButtonModule,
+    AppRoutingModule
   ],
   declarations: [
     AppComponent,
