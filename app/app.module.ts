@@ -14,6 +14,7 @@ import { MenuComponent } from "./menu/menu.component";
 import { DishDetailComponent } from "./dish-detail/dish-detail.component";
 import { HeaderComponent } from "./header/header.component";
 import { FooterComponent } from "./footer/footer.component";
+import { HomeComponent } from "./home/home.component";
 
 import "hammerjs";
 import { DishService } from "./services/dish.service";
