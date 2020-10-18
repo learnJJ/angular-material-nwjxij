@@ -12,6 +12,8 @@ import { MatButtonModule } from "@angular/material/button";
 import { AppComponent } from "./app.component";
 import { MenuComponent } from "./menu/menu.component";
 import { DishDetailComponent } from "./dish-detail/dish-detail.component";
+import { HeaderComponent } from "./header/header.component";
+import { FooterComponent } from "./footer/footer.component";
 
 import "hammerjs";
 import { DishService } from "./services/dish.service";
@@ -28,7 +30,13 @@ import { DishService } from "./services/dish.service";
     MatCardModule,
     MatButtonModule
   ],
-  declarations: [AppComponent, MenuComponent, DishDetailComponent],
+  declarations: [
+    AppComponent,
+    MenuComponent,
+    DishDetailComponent,
+    HeaderComponent,
+    FooterComponent
+  ],
   providers: [DishService],
   bootstrap: [AppComponent]
 })
