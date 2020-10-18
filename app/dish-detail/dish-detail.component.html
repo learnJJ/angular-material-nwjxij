@@ -8,21 +8,21 @@
   fxLayoutGap.xs="0"
 >
   <div fxFlex="40">
-    <mat-list *ngFor="let dish of dish.comments">
-      <mat-list-item>
-        <div>{{dish.comment}}</div>
-        <div>{{dish.rating}}Stars</div>
-        <div>--{{dish.author}}</div>
+    <mat-list>
+      <mat-list-item *ngFor="let dish of dish.comments">
+        <div matLine>{{dish.comment}}</div>
+        <div matLine>{{dish.rating}}Stars</div>
+        <div matLine>--{{dish.author}}</div>
       </mat-list-item>
     </mat-list>
   </div>
 
   <div fxFlex="40" *ngIf="dish">
-    <mat-list *ngFor="let dish of dish.comments">
-      <mat-list-item>
-        <div>{{dish.comment}}</div>
-        <div>{{dish.rating}}Stars</div>
-        <div>--{{dish.author}}</div>
+    <mat-list>
+      <mat-list-item *ngFor="let dish of dish.comments">
+        <div matLine>{{dish.comment}}</div>
+        <div matLine>{{dish.rating}}Stars</div>
+        <div matLine>--{{dish.author}}</div>
       </mat-list-item>
     </mat-list>
   </div>
