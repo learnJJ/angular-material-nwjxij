@@ -9,7 +9,7 @@ import { Dish } from "../shared/dish";
 export class MenuComponent implements OnInit {
   constructor() {}
 
-  dishes: Dish = [
+  dishes: Dish[] = [
     {
       id: "0",
       name: "Uthappizza",
