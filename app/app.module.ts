@@ -10,6 +10,7 @@ import { AppComponent } from "./app.component";
 import { MenuComponent } from "./menu/menu.component";
 
 import "hammerjs";
+import { DishDetailComponent } from './dish-detail/dish-detail.component';
 
 @NgModule({
   imports: [
@@ -20,7 +21,7 @@ import "hammerjs";
     FlexLayoutModule,
     MatListModule
   ],
-  declarations: [AppComponent, MenuComponent],
+  declarations: [AppComponent, MenuComponent, DishDetailComponent],
   providers: [],
   bootstrap: [AppComponent]
 })
