@@ -6,6 +6,7 @@ import { MatToolbarModule } from "@angular/material";
 import { FlexLayoutModule } from "@angular/flex-layout";
 
 import { AppComponent } from "./app.component";
+import { MenuComponent } from "./menu/menu.component";
 
 import "hammerjs";
 
@@ -17,7 +18,7 @@ import "hammerjs";
     MatToolbarModule,
     FlexLayoutModule
   ],
-  declarations: [AppComponent],
+  declarations: [AppComponent, MenuComponent],
   providers: [],
   bootstrap: [AppComponent]
 })
