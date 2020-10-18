@@ -14,6 +14,7 @@ import { MenuComponent } from "./menu/menu.component";
 import { DishDetailComponent } from "./dish-detail/dish-detail.component";
 
 import "hammerjs";
+import { DishService } from "./services/dish.service";
 
 @NgModule({
   imports: [
@@ -28,7 +29,7 @@ import "hammerjs";
     MatButtonModule
   ],
   declarations: [AppComponent, MenuComponent, DishDetailComponent],
-  providers: [],
+  providers: [DishService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
