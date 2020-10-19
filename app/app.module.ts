@@ -18,6 +18,7 @@ import { HomeComponent } from "./home/home.component";
 
 import "hammerjs";
 import { DishService } from "./services/dish.service";
+// import { RouterModule } from "@angular/router";
 import { AppRoutingModule } from "../app-routing/app-routing.module";
 
 @NgModule({
