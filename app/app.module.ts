@@ -18,11 +18,10 @@ import { HomeComponent } from "./home/home.component";
 import { AboutComponent } from "./about/about.component";
 import { ContactComponent } from "./contact/contact.component";
 
-
 import "hammerjs";
 import { DishService } from "./services/dish.service";
 // import { RouterModule } from "@angular/router";
-import { AppRoutingModule } from "../app-routing/app-routing.module";
+import { AppRoutingModule } from "./app-routing/app-routing.module";
 
 @NgModule({
   imports: [
