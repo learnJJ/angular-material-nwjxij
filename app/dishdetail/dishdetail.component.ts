@@ -4,7 +4,7 @@ import { Dish } from "../shared/dish";
 @Component({
   selector: "dishdetail",
   templateUrl: "./dishdetail.component.html",
-  styleUrls: ["./dishdetail.component.css"]
+  styleUrls: ["./dishdetail.component.scss"]
 })
 export class DishDetailComponent implements OnInit {
   @Input()
