@@ -1,1 +1,14 @@
-<p>Home works!!!</p>
+<mat-card *ngIf="leader">
+	<mat-card-header>
+		<div mat-card-avatar class="header-image"></div>
+		<mat-card-title>{{leader.}}</mat-card-title>
+		<mat-card-subtitle>{{leader}}</mat-card-subtitle>
+	</mat-card-header>
+	<img mat-card-image src={{leader.image}} alt="Photo of a Shiba Inu">
+	<mat-card-content>
+		<p>
+			{{leader.}}
+		</p>
+	</mat-card-content>
+
+</mat-card>
