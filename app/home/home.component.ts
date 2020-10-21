@@ -8,12 +8,13 @@ import { Leader } from "../shared/leader";
   styleUrls: ["./home.component.scss"]
 })
 export class HomeComponent implements OnInit {
+  person: Leader;
   constructor(private leaderservice: LeaderService) {}
   leaders: Leader[];
   featuredLeader: any;
   ngOnInit() {
     this.leaders = this.leaderservice.getLeaders();
-    this.featuredLeader = this.leaders.filter(leader => {
+    this.person = this.leaders.filter(leader => {
       if (leader.featured) {
         return leader;
       }
