@@ -14,11 +14,10 @@ export class HomeComponent implements OnInit {
   featuredLeader: any;
   ngOnInit() {
     this.leaders = this.leaderservice.getLeaders();
-    this.person = this.leaders.filter(leader => {
+    this.featuredLeader = this.leaders.filter(leader => {
       if (leader.featured) {
         return leader;
       }
     });
-    console.log(this.featuredLeader);
   }
 }
