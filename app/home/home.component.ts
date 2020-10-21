@@ -10,14 +10,14 @@ import { Leader } from "../shared/leader";
 export class HomeComponent implements OnInit {
   constructor(private leaderservice: LeaderService) {}
   leaders: Leader[];
-  featuredLeader;
+  featuredLeader: any;
   ngOnInit() {
     this.leaders = this.leaderservice.getLeaders();
     this.featuredLeader = this.leaders.filter(leader => {
       if (leader.featured) {
-        console.log(leader);
         return leader;
       }
     });
+    console.log(this.featuredLeader);
   }
 }
