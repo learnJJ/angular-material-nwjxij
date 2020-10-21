@@ -22,6 +22,7 @@ import "hammerjs";
 import { DishService } from "./services/dish.service";
 // import { RouterModule } from "@angular/router";
 import { AppRoutingModule } from "./app-routing/app-routing.module";
+import { LeaderService } from "./services/leader.service";
 
 @NgModule({
   imports: [
@@ -46,7 +47,7 @@ import { AppRoutingModule } from "./app-routing/app-routing.module";
     AboutComponent,
     ContactComponent
   ],
-  providers: [DishService],
+  providers: [DishService, LeaderService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
