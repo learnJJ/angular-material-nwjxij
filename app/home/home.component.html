@@ -1,14 +1,13 @@
-<mat-card *ngIf="leader">
-	<mat-card-header>
-		<div mat-card-avatar class="header-image"></div>
-		<mat-card-title>{{leader.}}</mat-card-title>
-		<mat-card-subtitle>{{leader}}</mat-card-subtitle>
-	</mat-card-header>
-	<img mat-card-image src={{leader.image}} alt="Photo of a Shiba Inu">
-	<mat-card-content>
-		<p>
-			{{leader.}}
-		</p>
-	</mat-card-content>
-
-</mat-card>
+<div fxFlex="30">
+	<mat-card>
+		<mat-card-header>
+			<mat-card-title>{{featuredLeader.name}}</mat-card-title>
+		</mat-card-header>
+		<img mat-card-image src={{featuredLeader.image}}>
+		<mat-card-content>
+			<p>
+				{{featuredLeader.description}}
+			</p>
+		</mat-card-content>
+	</mat-card>
+</div>

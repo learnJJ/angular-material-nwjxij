@@ -14,9 +14,10 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
     this.leaders = this.leaderservice.getLeaders();
     this.featuredLeader = this.leaders.filter(leader => {
-      if(leader.featured){
+      if (leader.featured) {
+        console.log(leader);
         return leader;
       }
-    }
-}
+    });
+  }
 }
