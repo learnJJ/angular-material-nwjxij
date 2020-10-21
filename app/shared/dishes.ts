@@ -1,6 +1,6 @@
-import { Dish } from "./dish";
+import { Leader } from "./leader";
 
-export const DISHES: Dish[] = [
+export const LEADERS: Leader[] = [
   {
     id: "0",
     name: "Uthappizza",
