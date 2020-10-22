@@ -8,6 +8,7 @@ import { MatListModule } from "@angular/material/list";
 import { MatGridListModule } from "@angular/material/grid-list";
 import { MatCardModule } from "@angular/material/card";
 import { MatButtonModule } from "@angular/material/button";
+import { MatDialogModule } from "@angular/material/dialog";
 
 import { AppComponent } from "./app.component";
 import { MenuComponent } from "./menu/menu.component";
@@ -23,6 +24,7 @@ import { DishService } from "./services/dish.service";
 // import { RouterModule } from "@angular/router";
 import { AppRoutingModule } from "./app-routing/app-routing.module";
 import { LeaderService } from "./services/leader.service";
+import { LoginComponent } from "./login/login.component";
 
 @NgModule({
   imports: [
@@ -35,7 +37,8 @@ import { LeaderService } from "./services/leader.service";
     MatGridListModule,
     MatCardModule,
     MatButtonModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatDialogModule
   ],
   declarations: [
     AppComponent,
@@ -45,8 +48,10 @@ import { LeaderService } from "./services/leader.service";
     FooterComponent,
     HomeComponent,
     AboutComponent,
-    ContactComponent
+    ContactComponent,
+    LoginComponent
   ],
+  entryComponents: [LoginComponent],
   providers: [DishService, LeaderService],
   bootstrap: [AppComponent]
 })
