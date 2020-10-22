@@ -1,16 +1,16 @@
 <div fxFlex="50">
 	<mat-card>
 		<mat-card-header>
-			<mat-card-title>{{featuredLeader[0].name | uppercase}} {{featuredLeader[0].abbr | uppercase}}
+			<mat-card-title>{{featuredLeader.name | uppercase}} {{featuredLeader.abbr | uppercase}}
 			</mat-card-title>
 		</mat-card-header>
-		<img mat-card-image src={{featuredLeader[0].image}}>
+		<img mat-card-image src={{featuredLeader.image}}>
 		<mat-card-content>
 			<div>
-				{{featuredLeader[0].designation}}
+				{{featuredLeader.designation}}
 			</div>
 			<p>
-				{{featuredLeader[0].description}}
+				{{featuredLeader.description}}
 			</p>
 		</mat-card-content>
 	</mat-card>
